@@ -3,6 +3,9 @@ body
     color: &text-color
     background: $bg-secondary
 
+img 
+    max-width: 100%
+    
 .section
     padding: 100px 0
     &-title
@@ -33,6 +36,20 @@ body
     background-color: $primary
     color: #ffffff
     +bold
+    &-fitting
+        color: $primary
+        background-color: $white
+    &-add
+        background-color: lighten($primary, 10%)
+        color: $white
+    &-like
+        background-color: $primary
+        height: 30px
+        width: 30px
+        border: none
+        img
+            filter: invert(1)
+            height: 19px
 
 .bg-secondary
     background: $bg-secondary
